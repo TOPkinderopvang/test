@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home Page</title>
+    <!-- Link to Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link to Main Page CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+    <!-- Password Overlay -->
+    <div id="password-overlay">
+        <div class="password-modal">
+            <h2>Enter password</h2>
+            <input type="password" id="password-input" placeholder="Enter password">
+            <button id="password-submit">Submit</button>
+            <p id="password-error" style="color: red; display: none;">Incorrect password. Please try again.</p>
+        </div>
+    </div>
+
+    <!-- Main Content (Hidden initially) -->
+    <div id="main-content" style="display: none;">
+        <!-- Header Section -->
+        <header>
+            <div class="header-container">
+                <div class="logo" onclick="location.href='index.html';">&nbsp;
+                    <img src="images/logo.png" alt="T.O.P. Logo">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="opvang.html">Opvang</a></li>
+                        <li><a href="overons.html">Over ons</a></li>
+                        <li><a href="beleid.html">Beleid</a></li>
+                        <li><a href="tarieven.html">Tarieven</a></li>
+                        <li><a href="inschrijven.html" class="button-outline">Inschrijven</a></li>
+                        <li><a href="contact.html" class="button-contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Phone"><i class="fas fa-phone-alt"></i></a>
+                    <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Full-width Banner Section -->
+        <section class="banner">
+            <h1>Welcome to Our Community</h1>
+            <p>Your child's safety and growth is our priority</p>
+        </section>
+
+        <!-- About Section -->
+        <section class="about">
+            <h2>Kinderopvang Top!</h2>
+            <p>Kinderopvang | Peuterspeelzaal | BSO</p>
+        </section>
+
+        <!-- Features Section (Full-width with columns) -->
+        <section class="features-section">
+            <div class="features-content">
+                <h2>Dit is waar we voor staan:</h2>
+                <div class="features-columns">
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> Ruime openingstijden 07.00-19.00 uur</li>
+                        <li><i class="fas fa-check"></i> Alle kinderen die ingeënt zijn (volgens
+                            Rijksvaccinatieprogramma)</li>
+                        <li><i class="fas fa-check"></i> De 1e 2 maanden meekijken met een camera op ons
+                            kinderdagverblijf</li>
+                        <li><i class="fas fa-check"></i> Aanbod ontbijt en verantwoorde warme maaltijden</li>
+                        <li><i class="fas fa-check"></i> Talentontwikkeling en ruim aanbod workshops</li>
+                    </ul>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> UNIEK: Verschillende ruimtes zoals een kinderkookcafé en
+                            atelier</li>
+                        <li><i class="fas fa-check"></i> 7plus groep met o.a. een eigen laboratorium</li>
+                        <li><i class="fas fa-check"></i> Kunst & Fotografie BSO</li>
+                        <li><i class="fas fa-check"></i> VVE en kindergebaar gecertificeerd</li>
+                        <li><i class="fas fa-check"></i> PeuterPlus groep speciaal voor kinderen met een
+                            ontwikkelingsvoorsprong</li>
+                    </ul>
+                </div>
+                <a href="#" class="cta-button">Vraag vrijblijvend een rondleiding aan</a>
+            </div>
+        </section>
+
+        <!-- New Section with Text and Video -->
+        <section class="info-section">
+            <div class="info-content">
+                <div class="info-text">
+                    <h2>Het mooiste wat jouw kind kan worden is zichzelf</h2>
+                    <p>
+                        Vanaf 1 januari 2020 is kinderdagverblijf en buitenschoolse opvang (BSO) “En nu jij”
+                        van start gegaan aan Kasteel Noordeinde 22 in Meppel. Bij ons draait alles om
+                        talentontwikkeling.
+                        Ons motto is: “Ik kan het voordoen, ik sta naast jou, en dan JIJ! Ik ben er voor jou!”
+                    </p>
+                    <p><strong>Bekijk onze virtuele tour</strong></p>
+                    <p>
+                        Ben je nieuwsgierig geworden? Je bent van harte welkom om bij ons langs te komen.
+                        We laten je graag alles zien en nemen uitgebreid de tijd om al je vragen te beantwoorden.
+                        <a href="#">Neem contact met ons op voor een rondleiding ></a>
+                    </p>
+                </div>
+                <div class="info-video">
+                    <!-- YouTube video embedded here -->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qrO4YZeyl0I"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Services Section -->
+        <section class="services">
+            <h2>Een plek voor groei, ontwikkeling en plezier</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <img src="images/romyevy.jpg" alt="Placeholder Image">
+                    <p class="service-title">De ontdekkers, dromers en uitvinders</p>
+                    <p class="service-subtitle">Kinderopvang 0–4 jaar</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/romy.jpg" alt="Placeholder Image">
+                    <p class="service-title">De doeners</p>
+                    <p class="service-subtitle">Peuterspeelzaal 2–4 jaar</p>
+                </div>
+                <div class="service-item">
+                    <img src="images/tesscollin2.jpg" alt="Placeholder Image">
+                    <p class="service-title">De professors</p>
+                    <p class="service-subtitle">BSO 4–12 jaar</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-left">
+                    <p><strong>Kinderopvang TOP!</strong></p>
+                    <p>Zwaluwstraat 188</p>
+                    <p>3853 CL Ermelo</p>
+                    <p>E: Kinderopvangtop@gmail.com</p>
+                    <p>T kantoor: 0642779832</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Phone"><i class="fas fa-phone-alt"></i></a>
+                    <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kinderopvang TOP!. Ontwerp en realisatie: Alec de Boer</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
